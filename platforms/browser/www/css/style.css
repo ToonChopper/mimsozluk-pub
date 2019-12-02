@@ -1,0 +1,19 @@
+population-chart > svg {
+    height: calc(100% - 44px) !important;
+}
+.filter-input-container {
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #47B8E4;
+    height: 44px;
+    line-height: 44px;
+}
+
+.search-input {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.year-select-container {
+    background-color: #47B8E4;
+}

@@ -1,0 +1,338 @@
+.table-bordered {
+	border: 1px solid;
+}
+
+.table-caption {
+	font-style: italic;
+	text-align: left;
+	/*padding: 20px;*/
+	padding: 1.1em;
+}
+
+.table-custom-ahsap td{
+	text-align: left;
+}
+
+.table-custom-beton th {
+	font-weight: normal !important;
+	max-width: 22em;
+}
+
+.table-custom-beton {
+	/*font-size: 15px;*/
+	font-size: 1em;
+}
+.table-custom-beton > thead > tr > th:nth-child(1) {
+	min-width: 120px;
+}
+.table-custom-beton > thead > tr > th {
+	text-align: center;
+	padding: 5px !important;
+	vertical-align: top;
+}
+.table-custom-beton > tbody > tr > td {
+	padding-left: 2.3em;
+	padding-right: 2em;
+/*	padding-left: 40px;
+	padding-right: 30px;
+*/	text-align: right;
+}
+.table-custom-beton > tbody > tr > td:nth-child(1) {
+	text-align: left;
+}
+
+.table-custom-dozaj td {
+	text-align: left;
+}
+
+.table-custom-dozaj  > tbody > tr > td:nth-child(1) {
+	min-width: 150px;
+	vertical-align: middle;
+}
+
+.table-custom-dozaj  > tbody > tr > td:nth-child(2) {
+	min-width: 60px;
+	vertical-align: middle;
+}
+
+.table-custom-dozaj  > tbody > tr > td:nth-child(3) {
+	min-width: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.table-custom-elektrik {
+	max-width: 9em;
+}
+
+.table-custom-elektrik td {
+	padding-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.table-custom-elektrik  > tbody > tr > td:nth-child(2) {
+	min-width: 150px;
+	vertical-align: middle;
+}
+
+.table-custom-gokdelen {
+	max-width: 27em;
+}
+
+.table-custom-gokdelen * {
+	/*font-size: 12px !important;*/
+	font-size: 0.95em !important;
+}
+
+.table-custom-gokdelen > tbody > tr > td {
+	vertical-align: middle;
+}
+.table-custom-gokdelen > thead > tr > th {
+	text-align: center;
+}
+.table-custom-gokdelen > thead > tr > th:nth-child(-n+2) {
+	text-align: left;
+}
+
+.table-custom-gokdelen > tbody > tr > td:nth-child(1) {
+	min-width: 120px;
+	text-align: left;
+}
+.table-custom-gokdelen > tbody > tr > td:nth-child(2) {
+	min-width: 90px;
+	text-align: left;
+}
+.table-custom-gokdelen > tbody > tr > td:nth-child(3) {
+	min-width: 50px;
+	text-align: center;
+}
+.table-custom-gokdelen > tbody > tr > td:nth-child(4) {
+	min-width: 70px;
+	text-align: right;
+	padding-right: 20px;
+}
+.table-custom-gokdelen > tbody > tr > td:nth-child(5) {
+	min-width: 50px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.table-custom-sports td {
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+	max-width: 24em;
+}
+
+.table-custom-sports2 > tbody > tr > td:nth-child(2) {
+	text-align: right;
+	max-width: 20em;
+}
+
+.table-custom-tas  > tbody > tr > td:nth-child(2) {
+	text-align: left;
+	max-width: 20em;
+}
+
+.table-custom-tas  > tbody > tr > td:nth-child(3) {
+	text-align: center;
+}
+
+.table-custom-kesmetas {
+	border-width: 0px;
+	max-width: 20em;
+}
+
+.td-custom-kesmetas {
+	border-color: black !important;
+	border-style: solid !important;
+	border-width: 1px !important;
+	padding-left: 10px !important;
+	padding-top: 5px !important;
+	min-width: 35px !important;
+}
+
+.td-custom-kesmetas-empty {
+	border-left: none !important;
+	border-right: none !important;
+	max-width: 5px !important;
+	padding: 3px !important;
+	min-width: 0px !important;
+}
+
+.td-custom-kesmetas2 {
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	border-style: none !important;
+}
+
+.table-custom-kesmetas > tbody > tr > td:nth-child(1) {
+}
+
+.table-custom-kesmetas2 {
+	border-color: black !important;
+	border-style: none !important;
+	max-width: 150px;
+	padding: 0px;
+}
+
+.table-custom-toprak td {
+/* 	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	padding-left: 10px;
+	font-size: 13px;
+	 */	
+	padding-top: 0.4em !important;
+	padding-bottom: 0.4em !important;
+	padding-left: 0.75em;
+	font-size: 0.8em;
+	max-width: 20em;
+}
+
+.table-custom-noborder *
+, .table-custom-tugla *
+, .table-custom-sports2 *
+/*, .table-custom-kapi **/
+, .table-custom-harmansuyu *
+, .table-custom-dozaj * 
+, .table-custom-ahsap *
+, .table-custom-tas *
+, .table-custom-plan *
+, .table-custom-cami *
+{
+	border-style: none !important;
+	/* padding-top: 5px !important;  */
+	/* padding-bottom: 5px !important;  */
+	/*font-size: 14px;*/
+	font-size: 0.95em;
+}
+
+.table-custom-dozaj {
+	max-width: 22em;
+}
+
+.table-custom-harmansuyu {
+	max-width: 15em;
+}
+
+.table-custom-kapi {
+	width: 75%;
+	min-width: 10em;
+	max-width: 30em;
+}
+
+.table-custom-kapi td {
+	/*padding-right: 20px;*/
+	padding-right: 1.2em;
+	text-align: left;
+	font-size: 1em;
+}
+
+.table-custom-kapi-agac {
+	padding: 0.6em !important;
+	font-size: 0.9em;
+	text-align: left;
+	width: 90%;
+	min-width: 10em;
+	max-width: 32em;
+}
+
+.table-custom-kapi-agac > tbody > tr > td:nth-child(1) {
+	/*max-width: 130px;*/
+	max-width: 8em;
+	/*font-size: 0.95em;*/
+}
+
+
+.table-custom-noborder td {
+	/* font-size: 16px !important;
+	text-align: left;
+	padding-left: 10px;
+	margin-top: 0px; */
+	font-size: 1em !important;
+	text-align: left;
+	padding-left: 0.8em;
+	margin-top: 0;
+	
+}
+
+.table-custom-tugla *
+{
+	/*font-size: 16px !important;*/
+	font-size: 1em !important;
+	padding: 0px !important;
+}
+
+.table-custom-tugla
+{
+	/*min-width: 170px !important;*/
+	min-width: 10em !important;
+	max-width: 11em;
+}
+
+.table-custom-tugla > tbody > tr > td:nth-child(1) {
+	padding-right: 0px;
+}
+
+.table-custom-tugla > tbody > tr > td:nth-child(2) {
+	padding-left: 0px;
+}
+
+/* increase greek tau character in equation */
+.table-custom-makaslama > tbody > tr > td:nth-child(2) {
+	font-size: 130%;
+	/*padding-left: 20px;*/
+	padding-left: 1.4em;
+}
+
+.table-custom-plan, .table-custom-cami {
+	/*font-size: 16px !important;	*/
+	font-size: 1em !important;	
+}
+
+.table-custom-cati * {
+	/*padding-top: 0px;*/
+	font-size: 1em;
+}
+
+.div-inline-formula {
+	display: inline-table;
+}
+
+.table-custom-pencere {
+	/*max-width: 400px !important;*/
+	max-width: 24em !important;
+}
+
+.table-custom-bagilnem {
+	max-width: 24em !important;
+}
+
+.table-custom-kilcallik {
+	width: 100%; 
+	max-width: 20em;
+}
+
+.table-custom-pencere td > img {
+	/*max-width: 350px !important;*/
+	/*max-width: 21em !important;*/
+	width: 100%; 
+}
+.table-custom-pencere td {
+	text-align: center;
+	/*padding: 10px;*/
+	padding: 0.6em;
+}
+
+.td-pencere-sec {
+	font-weight: bold;
+	/*padding: 5px;*/
+	padding: 0.3em;
+}
+
+.td-pencere-sub {
+	font-weight: bold;
+	/*padding: 5px;*/
+	padding: 0.3em;
+	text-align: left !important;
+}

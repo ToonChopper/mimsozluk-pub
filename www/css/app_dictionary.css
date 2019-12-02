@@ -1,0 +1,338 @@
+
+body {
+	font-family: NotoSerif-Regular;
+}
+
+.selected_def {
+	padding-bottom: 3em;
+	width: 100%;
+}
+
+.sel_word_div {
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+
+.sel-word-nav {
+	background-color: #E5E5E5;
+	padding: 0px;
+}
+
+.sel_word_div, .selected_word {
+	font-family: Muli-Black, Open Sans, Verdana;
+	/*font-size: 22px;*/
+	font-size: 1.1em;
+	font-weight: normal;
+	padding-top: 5px;
+	margin-bottom: 0px;
+}
+
+.sel_def_div {
+	font-family: NotoSerif-Regular, Open Sans;
+	padding-left: 1.2em;
+	/*font-size: 16px;*/
+	font-size: 1em;
+	font-weight: normal;
+	padding-top: 0px;
+	padding-right: 1em;
+	/* text-align: justify; */
+}
+
+p.word_origin {
+	padding-top: 0.1em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0.5em;
+	line-height: 1;
+}
+
+.word_carousel_item {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.flex-grow {
+    flex: 1 0 auto;
+}
+
+.span-entry-origin {
+	/*font-size: 16px;*/
+	padding-left: 0.2em !important;
+	font-size: 0.8em;
+}
+
+.sel_def_div > label > p {
+	 /*text-align: justify;*/
+}
+
+.p-word_derv_entry {
+	/*text-align: justify;*/
+}
+
+p.word_def {
+	hyphens: none !important;
+	padding-right: 0em;
+	/*text-align: justify;*/
+}
+
+ol.word_def_list > li {
+	counter-increment: item;
+	margin-bottom: 5px;
+	/*text-align: justify;*/
+}
+
+.sel_def_div > label > p.word_origin {
+	text-align: left !important;
+}
+
+
+.word_def {
+	/*padding-right: 1.2em;*/
+}
+
+ol.word_def {
+	padding-right: 1.6em;
+}
+
+.p-word_derv_entry {
+/*	padding-left: 15px;
+	text-indent: -15px;
+*/	padding-left: 1em;
+	text-indent: -1em;
+	padding-right: 0em;
+}
+
+.p-word_usage_entry {
+	padding-left: 1em;
+}
+
+.word_usage_entry {
+	font-family: Muli-Black, Open Sans;
+	font-size: 120%;
+	line-height: 100%;
+}
+
+/* This is necessary for definition*/
+.span-first-p+p {
+	margin-top: 1rem;
+}
+
+span.word_usage_entry {
+	/*font-weight: bold;*/
+}
+p.word_usage_entry {
+	margin-left: 10px;
+}
+
+p.word_derv_entry {
+	margin-left: 11px;
+	text-indent: -10px;
+}
+
+p.word_origin,
+span.word_derv_entry,
+span.word_synonym,
+.span-entry-origin {
+	font-family: NotoSerif-Italic;
+	/*font-style: italic;*/
+}
+
+span.word_derv_entry {
+	font-weight: bold;
+}
+
+div.word_image,
+div.word_image_title,
+p.word_image_title,
+p.word_image,
+table.table-custom-elektrik
+{
+	font-family: NotoSerif-Italic;
+	/*font-style: italic;*/
+	text-align: left;
+	/*font-size: 18px;*/
+	font-size: 1.0em;
+	font-weight: normal;
+	/*margin-bottom: 20px;*/
+	margin-bottom: 1.25em;
+	/*font-style: italic;*/
+}
+
+div.word_image {
+	margin-right: -1.2em;
+}
+
+p.word_image_caption {
+	max-width: 18em;
+}
+
+div.word_image p
+, div.word_image p.word_image_title
+{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	width: 350px;
+}
+
+div.word_image div {
+	margin-bottom: 15px;
+}
+div.word_image ol {
+/* 	padding-left: 10px;
+	margin-left: 20px;
+	 */	
+	padding-left: 0.75em;
+	margin-left: 1.5em;
+}
+div.word_image table {
+	padding-left: 0px;
+	/* margin-top: 10px; */
+}
+div.word_image li
+{
+	/*font-size: 16px;*/
+	font-size: 1em;
+}
+
+p.word_image
+, p.word_image_title {
+	/*margin-top: 10px;*/
+	margin-top: 0.625em;
+}
+p.word_image_title {
+	font-weight: normal;
+}
+
+img.word_image {
+	max-width: 16em;
+	/* min-width: 350px; */
+	padding-right: 1.2em;
+}
+
+img.img-w-100 {
+	width: 95%;
+	max-width: 35em;
+}
+
+img.img-w-75 {
+	width: 80%;
+	max-width: 25em;
+}
+
+.word_def_equation {
+	text-align: center;
+}
+
+.word_def_count {
+	font-weight: bold;
+}
+.word_def_type {
+	font-style: italic;
+}
+
+ol.word_def_list {
+	list-style: none;
+	counter-reset: item;
+	padding-left: 0px;
+	padding-right: 0em;
+}
+
+ol.word_def_list > li:before {
+	content: counter(item) ". ";
+	font-weight: bold;
+}
+
+tr {
+   max-height: 35px;
+}
+
+.submit-icon {
+	position: relative !important;
+	left: 35px;
+	color: white;
+}
+
+.submit-button {
+	padding-left: 35px;
+}
+
+.btn-preview {
+	color: white !important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: lightgrey !important;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: lightgrey !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: lightgrey !important;
+}
+
+.tbl-select-letter button {
+	min-width: 35px !important;
+}
+
+.tbl-select-letter-selected {
+}
+
+.myAlert-bottom{
+    position: fixed;
+	bottom: 40px;
+	margin: auto;
+/*	margin-bottom: 0px;*/
+}
+
+.no-entry-box {
+	/*font-size: 24px;*/
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #cbcbcb;
+	text-align: center;
+/*	margin-top: 60px;
+	margin-bottom: 60px;
+*/	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+.div-table-subdef {
+	max-height: 280px;
+	overflow-y: auto;
+}
+
+.formula-title {
+	font-weight: bold;
+	background-color: #efefef;
+}
+
+.ons-row-search-opt {
+	font-size: 1em;
+}
+
+.ons-row-search-opt-main {
+	font-size: 1.2em;
+}
+
+.row-search-opt {
+	padding-top: 0.4em;
+}
+
+.row-search-sub-opt {
+	font-size: 1em;
+	padding-right: 1.0em;
+	font-family: Roboto !important;
+}
+
+.row-search-sub-opt p {
+	width: 100%;
+	text-align: right;
+}
+
+.see-also-link {
+	color: black;
+	background-color: #D3F0F7;
+	border-radius: 4px;
+}

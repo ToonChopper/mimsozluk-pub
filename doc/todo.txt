@@ -1,0 +1,16 @@
+Mobile
+	- Try lazy carousel solutions
+	- Make socket-io connection to server for push notifications
+	- Add basic tutorial
+
+Server
+	- Socket listener
+
+Backoffice
+	- send update notification via socket-io
+
+DB Import
+	- Letters A-E
+	- Letters F-K
+	- Letters L-P
+	- Letters R-Z

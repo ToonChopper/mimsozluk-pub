@@ -1,0 +1,257 @@
+{
+  "name": "dictionary",
+  "version": "0.9.1",
+  "private": false,
+  "entries": [
+    {
+      "id": 0,
+      "entries": [
+        {
+          "entry": "ağaç",
+          "origin": "dış kabuk, iç kabuk, kambiyum, dışodun, içodun "
+        }
+      ],
+      "definitions": [
+        {
+          "def": " Gövdesi odun ya da kereste olmaya elverişli olup uzun yıllar yaşayabilen bitki. Ağacın kısımları dıştan içe doğru şöyle sıralanır: <em>dış kabuk, iç kabuk, kambiyum, dışodun, içodun </em>ve<em> öz.</em> "
+        },
+        {
+          "def": " Direk. "
+        },
+        {
+          "def": " Ahşap."
+        }
+      ],
+      "derivatives": [
+        {
+          "entry": "çok sert ağaçlar",
+          "def": " Elma, armut, erik, zeytin, şimşir gibi çok sert keresteli ağaçlar.",
+          "see_also": "",
+          "paragraphs": []
+        },
+        {
+          "entry": "egzotik ağaçlar",
+          "def": " Maun, pelesenk, abanoz, tik gibi başka iklimlerin değerli ağaçları.",
+          "see_also": "",
+          "paragraphs": []
+        },
+        {
+          "entry": "iğne yapraklı ağaçlar",
+          "def": " Porsukgiller, servigiller ve çamgillerden, yaprakları iğnemsi ağaçlar; <em>kozalaklı ağaçlar. </em>Türkiye’de yetişip yapıda kullanılan iğne yapraklı ağaçlar:",
+          "see_also": "",
+          "paragraphs": []
+        },
+        {
+          "entry": "çam türü ",
+          "def": "(pinus)",
+          "see_also": "",
+          "paragraphs": [
+            {
+              "def": "fıstık çamı (pinus pinea)",
+              "see_also": "",
+              "paragraphs": []
+            },
+            {
+              "def": "karaçam (pinus nigra)",
+              "see_also": "",
+              "paragraphs": []
+            },
+            {
+              "def": "kızılçam (pinus brutia)",
+              "see_also": "",
+              "paragraphs": []
+            },
+            {
+              "def": "sarıçam (pinus silvestris)",
+              "see_also": "",
+              "paragraphs": []
+            }
+          ]
+        },
+        {
+          "entry": "ladin türü",
+          "def": " (picea)",
+          "see_also": "",
+          "paragraphs": [
+            {
+              "def": "Doğu ladini (picea orientalis)",
+              "see_also": "",
+              "paragraphs": []
+            }
+          ]
+        },
+        {
+          "entry": "köknar türü",
+          "def": "",
+          "see_also": "",
+          "paragraphs": [
+            {
+              "def": "Batı Karadeniz köknarı (abies Bornmülleriana) ",
+              "see_also": "",
+              "paragraphs": []
+            },
+            {
+              "def": "Doğu Karadeniz köknarı (abies Nordmanniana)",
+              "see_also": "",
+              "paragraphs": []
+            },
+            {
+              "def": "Kazdağ köknarı (abies equatoriani)",
+              "see_also": "",
+              "paragraphs": []
+            },
+            {
+              "def": "Toros köknarı (abies cilicica)",
+              "see_also": "",
+              "paragraphs": []
+            }
+          ]
+        },
+        {
+          "entry": "sedir türü",
+          "def": " (cedrus)",
+          "see_also": "",
+          "paragraphs": [
+            {
+              "def": "Toros sediri (cedrus libani)",
+              "see_also": "",
+              "paragraphs": []
+            }
+          ]
+        },
+        {
+          "entry": "reçineli ağaçlar ",
+          "def": "Çam, akçam, servi, erez ağacı gibi ağaçlar. ",
+          "see_also": "",
+          "paragraphs": []
+        },
+        {
+          "entry": "sert ağaçlar ",
+          "def": "Meşe, karaağaç, dişbudak, gürgen, kayın, kestane gibi sert keresteli ağaçlar.",
+          "see_also": "",
+          "paragraphs": []
+        },
+        {
+          "entry": "yumuşak ağaçlar ",
+          "def": "Ihlamur, kavak, çınar, söğüt gibi kerestesi yumuşak olan ağaçlar.",
+          "see_also": "",
+          "paragraphs": []
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "entries": [
+        {
+          "entry": "ahşap",
+          "origin": "Ar. (<strong>haşep</strong>’in çoğulu. Türkçede çoğul anlamını yitirmiştir.) "
+        }
+      ],
+      "definitions": [
+        {
+          "def": "<em>sıf.</em> Ağaçtan, tahtadan yapılmış: <em>ahşap ev.</em> "
+        },
+        {
+          "def": "<em>a</em>. Ağacın odun kısımları, <em>kereste, tahta.</em> Ahşap, ince tüpleri andıran hücrelerin biraraya gelmesiyle oluşan, örgensel bir gereçtir. Hücrelerin aslı, ağacın gövde eksenine paralel selüloz liflerinden ve bunları birbirine bağlayan amorf bünyeli \"linyin\" denilen maddeden meydana gelir. Selülozun suya çok düşkün olması ve hücreler içindeki boşlukların varlığı, ahşabın hava etkisinden ve içinde bulunduğu ortamın koşullarından etkilenerek zarar görmesine yol açar. Örgensel bünyesi nedeniyle biçim dengesizliği, çatlama, yarılma, çarpılma görülür. Bu nedenle cisimlerin dayanımını tanımlayan klasik yöntemler ahşaba ancak bazı özel koşullarla uygulanabilirler."
+        }
+      ],
+      "paragraphs": [
+        {
+          "entry": "Ahşabın fiziksel özelliklerinin incelenmesi ve tanımlanması oldukça güçtür. Mekanik dayanım, ahşabın yoğunluğuyla orantılı olarak artar. Ağaç kesildiğinde bütün hücreler ölmez ve suyunu hemen yitirmez. Zamanla suyu gidince hacmi azalır, buna karşılık kurumuş ağaç yeniden su görürse şişer. Bu olaylarla ahşabın biçim değiştirmesine ",
+          "def": "<strong>ahşabın çalışması</strong> denir. Çalışma, ahşabın her doğrultusunda aynı olmadığı gibi ağacın türüne göre de farklılık gösterir. Bu nedenle, ahşabın çalışması sonucunda ortaya çıkabilecek sakıncaları giderebilmek için bazı önlemler alınır. Doğal ya da yapay yoldan kurutulmuş ağaç kullanmak, masif ahşap kullanımında başta gelen etkin önlemdir. Levha halinde kullanım içinse, daha çok kontrplak, ahşap yonga levhası ve odunlifi levha gibi yan orman ürünlerinden yararlanılır. Bu levhalar 20.yy.’ın ilk yarısında geliştirilmiş yapay ahşap gereçlerdir. Böylece, kendiliklerinden biçim ve boyut değiştirmeyecek, homojen ve izotrop levhalar elde edilmiştir. Ahşap işlerinde ağaç genel olarak; a. masif; b. kontrplak, odunlifi levha, ahşap yonga levhası lamine ahşap, marangoz levhası; c. kaplama şeklinde kullanılır. ",
+          "see_also": "",
+          "paragraphs": []
+        }
+      ],
+      "derivatives": [
+        {
+          "entry": "Yapıda Ahşap ve Teknikler:",
+          "def": " Yapıda ahşap, taşıyıcı (strüktür malzemesi) ya da tamamlayıcı olarak kullanılmıştır. ",
+          "see_also": "",
+          "paragraphs": [
+            {
+              "entry": "Tarımsal dönemin doğal ana gereçlerinden biri olarak ahşaptan, özellikle konut yapılarında geniş ölçüde yararlanılmıştır. Ahşap, taşıyıcı olarak yığma (çantı) ya da iskelet halinde, bir taş duvarın ya da temelin üstüne oturtularak kullanılmıştır. Bazen ahşap taban ve dikmelerle yapılan çatkılar arasına kerpiç, taş, tuğla gibi dolgu gereçleriyle hımış yapım türünden de yararlanılmıştır. Bu yöntem, kerpiçten ahşap iskelete geçişin ara çözümüdür. Ahşap iskeletin kuruluşunda genellikle iki yöntemden yararlanılmıştır. Birincisi, bir kat yüksekliğince giden dikmelerle köşelerde payandalardan meydana gelen yöntemdir. Payandalı ahşap yapım yöntemi adını alan bu uygulamada payandalar dikmeleri destekler ve yatay yükleri karşılar. Böylece, yöntemin her katta yinelenmesiyle birkaç katlı yapılar elde edilebilir. Bu yöntem, yüzyıllar boyunca Türkiye’de de uygulanmıştır. ABD ve İskandinav ülkelerinde geniş ölçüde uygulanmış olan ikinci yöntemdeyse dikmeler iki kat yüksekliğince saçağa kadar uzanırlar. ",
+              "def": "<strong>Balon çerçeve</strong> ya da <strong>Amerikan sistemi</strong> adı verilen bu yöntemde payanda kullanılmaz; bunun yerine çoğu kez kaplama tahtaları çapraz olarak çakılır. Ahşap inşaatta küçük kesitlerde genellikle çivi, büyük kesitlerde cıvata, kama gibi metal bağlama parçaları kullanılır. ",
+              "see_also": "",
+              "paragraphs": []
+            }
+          ]
+        },
+        {
+          "entry": "Mimarlıkta Ahşap:",
+          "def": " Ahşap, mimarlık açısından ilk kez tarımsal üretim düzeniyle birlikte ve daha çok konut yapılarında kullanılmaya başlanmışsa da, konut yapımı işi o dönemde anonim olarak uygulanmış yani mimarların çalışma alanı dışında kalmıştır. ",
+          "see_also": "",
+          "paragraphs": [
+            {
+              "def": "İlk Yunan tapınakları, ahşap yapım tekniğinin taşa uygulanmasının örnekleridir. Dor düzenindeki tapınaklarda ahşap yapım geleneği bu kez taşla sürdürülmüştür.",
+              "see_also": "",
+              "paragraphs": []
+            },
+            {
+              "def": "Avrupa’da Ortaçağ boyunca ahşap iskeletli, kâgir dolgulu yapılar çok kullanılmıştır. Daha sonraları, 19.yy.’da demir iskeletli öğeler ahşap iskeletin yerini alırken, bu sistemin özgün bir yorumu ortaya çıkmış ve yeni tekniklerin yolunu açmıştır. Yeni gereçlerin, özellikle çelik ve betonarmenin ortaya çıkışıyla, ahşap, yapılarda strüktür gereci olarak kullanılma alanını büyük oranda yitirmiştir.",
+              "see_also": "",
+              "paragraphs": []
+            },
+            {
+              "def": "Türkiye’de Akdeniz, Karadeniz ve Kuzeybatı Anadolu bölgelerindeki ormanlıklar, bu bölgelerde ahşabın ana yapı gereci olarak kullanılmasına yol açmıştır. Selçuklular ve Osmanlılar döneminde de Anadolu’daki evlerin çoğu ahşap ve kerpiçten yapılmıştır. Türkler anıtsal yapılarını ölümsüz kılabilmek için bu yapılarda taştan yararlanmışlar; buna karşılık, konut gibi, geçici sayılan yapıların ahşap yapılması yolunu seçerek ilginç bir dünya görüşü ortaya koymuşlardır. Yine de kimi camilerde ahşap kirişlemeli tavanlar, ahşap ayak dizileri, ahşap çatılar (Bezmiâlem Valide Sultan Camisi, 1845) hattâ ahşap kubbeler (Kocamustafapaşa Küçük Efendi, 1825; Kâğıthane Sadabat Camisi, 1862) görülmektedir. Geleneksel Türk mimarlığında ahşap yapılar, geniş saçaklı ahşap kırma çatılarla örtülmüştür. Bu geniş saçaklar, bir şemsiye gibi, hem yapıyı hem de o dönemin dar sokaklarını koruma işlevini üstlenmiştir. Osmanlı saraylarıysa evlerden daha özenli olarak ele alınmış ve kâgir olarak yapılmışlardır. ",
+              "see_also": "",
+              "paragraphs": []
+            },
+            {
+              "def": "Yüzyıllar boyu süren ve yavaş gelişen tekniklerin getirdiği deneyim birikimi sonucunda en olgun noktasına erişen bir ayrıntı anlayışıyla ahşap yapım teknolojisi, kendine özgü mimarlık biçimleri olan anonim ürünler vermiştir. Yangınlardan ve yıkılmaktan kurtularak günümüze ulaşan bazı Bursa, Kütahya, Ankara, İstanbul evleri, eski ahşap Türk evleri ve tutarlı yapım geleneği konusunda yeterli bilgi verirler. ",
+              "see_also": "",
+              "paragraphs": []
+            },
+            {
+              "def": "19.yy.’dan başlayarak ahşabın yerini alan yeni gereçler Türkiye’de de önceleri anonim mimarlık alanında yeni teknikler getirmeyerek, geleneksel gereçlere özgü tekniklerle kullanılmıştır. Ahşap yapımın karakteristiği olan eliböğründeler, betonarmeyle taklit edilmiş, tuğla, kemer ve kubbe yerine betonarme kemer ve kubbe kullanılmıştır. Çağdaş teknikler ahşabı yanmaya ve suya karşı dayanıklı hale getirebilmekte ve kurtlanmasını önleyebilmekteyse de, yoğun yapım hacmine oranla az bulunuşu ve çağdaş gereçlere göre daha pahalı oluşu kullanım alanını giderek daraltmıştır. Son yıllarda ekolojinin önem kazanmasıyla gelişmiş ülkelerde ağaçlar, özel orman alanlarında endüstriyel ürün gibi sistemli bir şekilde üretilerek sektöre sunulmaktadır. Türkiye’de imar yönetmelikleri de özellikle yanar bir gereç olması nedeniyle ahşabın strüktürde kullanılmasını büyük oranda sınırlamıştır. Bu nedenle de ülkemizde ahşap, yapıda daha çok, çatı konstrüksiyonu, pencere ve kapı doğramaları, döşeme ve duvar kaplamaları gibi tamamlayıcı öğelerin yapımında kullanılmaktadır. Türkiye’de yapıcılıkta ve marangozlukta çoğunlukla kullanılan ağaç türleri şunlardır: dişbudak, avudre, maun, ceviz, gürgen, meşe, karaağaç, kızılağaç, çam, köknar, lâdin.",
+              "see_also": "",
+              "paragraphs": []
+            }
+          ]
+        }
+      ],
+      "usages": [
+        {
+          "entry": "ahşap döşeme",
+          "def": " Bkz. döşeme.",
+          "see_also": "",
+          "paragraphs": []
+        },
+        {
+          "entry": "ahşap ızgara temel",
+          "def": "<strong> </strong>Bkz. temel.",
+          "see_also": "",
+          "paragraphs": []
+        },
+        {
+          "entry": "ahşap işleri ",
+          "def": "Ağaç işleri.",
+          "see_also": "",
+          "paragraphs": []
+        },
+        {
+          "entry": "ahşap koruyucuları ",
+          "def": "Ahşabı kurtlara karşı korumakta kullanılan çinko klorür (Zn Cl<sub>2</sub>), bakır sülfat, çinko sülfat, sodyum flüorür, tanen vb. (maddeler). El sürülmeyecek yerlerdeki ağaçlar için kreozotlama elverişlidir; ancak kreozot yanmayı kolaylaştırmaktadır. Kimi özel kimyasal maddelerle ahşaba, suya ya da yanmaya karşı (yanmayı geciktirmek üzere) dayanıklılık da kazandırılabilir.",
+          "see_also": "",
+          "paragraphs": []
+        },
+        {
+          "entry": "",
+          "def": "Bkz. yonga levhası.",
+          "see_also": "",
+          "paragraphs": []
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "entries": [
+        {
+          "entry": "ajur",
+          "def": " Kafesoyma.",
+          "origin": "Fr. <strong>(ajour)</strong>"
+        }
+      ]
+    }
+  ]
+}

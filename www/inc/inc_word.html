@@ -1,0 +1,17 @@
+<ons-template id="word.html">
+  <ons-page var="wordPage" class="word_html" ng-controller="WordDetailController as wordCtrl">
+    <ons-toolbar>
+      <div class="left"><ons-back-button>Aramaya Dön</ons-back-button></div>
+      <!-- <div class="right">
+        <ons-toolbar-button><ons-icon ng-click="wordCtrl.showPage('menu.html')" icon="md-menu"></ons-icon></ons-toolbar-button>
+      </div> -->
+      <div class="center">{{ wordCtrl.entry() }}</div>
+    </ons-toolbar>
+    <div class="sel_word_div">
+      <label class="selected_word">{{ wordCtrl.entry() }}</label>
+    </div>
+    <div class="sel_def_div">
+      <label id="wordDefinition" class="selected_def"></label>
+    </div>
+  </ons-page>
+</ons-template>

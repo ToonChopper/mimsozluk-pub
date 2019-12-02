@@ -1,0 +1,54 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.monaca.worldPopulation"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "io.monaca.worldPopulation"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "io.monaca.worldPopulation"
+    },
+    "cordova-custom-config": {
+      "PACKAGE_NAME": "io.monaca.worldPopulation"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "file": "plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
+      "id": "cordova-sqlite-storage.SQLitePlugin",
+      "pluginId": "cordova-sqlite-storage",
+      "clobbers": [
+        "SQLitePlugin"
+      ]
+    },
+    {
+      "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+      "id": "cordova-plugin-splashscreen.SplashScreen",
+      "pluginId": "cordova-plugin-splashscreen",
+      "clobbers": [
+        "navigator.splashscreen"
+      ]
+    },
+    {
+      "file": "plugins/cordova-plugin-splashscreen/src/browser/SplashScreenProxy.js",
+      "id": "cordova-plugin-splashscreen.SplashScreenProxy",
+      "pluginId": "cordova-plugin-splashscreen",
+      "runs": true
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-whitelist": "1.3.3",
+    "cordova-sqlite-storage": "2.4.0",
+    "cordova-plugin-splashscreen": "5.0.1",
+    "cordova-custom-config": "5.0.2"
+  }
+}

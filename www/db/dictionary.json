@@ -1,0 +1,462 @@
+{
+    "name": "dictionary",
+    "version": "0.9.1",
+    "description": "HTML5 Mobile Framework & UI Components",
+    "private": false,
+    "author": "tunctaylan@gmail.com",
+	
+	"sections": [
+		{
+			"sectionName": "a",
+			"sectionId": "0",
+			"entries": [
+				{
+					"entry": "X - sil",
+					"id": "1300",
+					"def": "Bu kayıt silinecek"
+				},
+				{
+					"entry": "Ae",
+					"id": "1301",
+					"def": "Emsal,inşaat emsali"
+				},
+				{
+					"entry": "aebat",
+					"id": "1302",
+					"origin": "(but'un çoğulu) Ar.",
+					"def": "xyz",
+					"usages": [
+					{
+						"entry": "aebat çizgizi",
+						"def": "Ölçü çizgisi, boyut çizgisi."
+					}]
+				}
+
+				,
+				{
+					"entry": "aebced",
+					"id": "1303",
+					"origin": "Ar.",
+					"def": "Her harfi bir rakamın karşılığı olan,Arap harfleriyle yazılı bir hesap dizgesi",
+					"usages": [
+					{
+						"entry": "aebced hesabı",
+						"def": "Bu değerleri hesaplayarak bir sözcüğü rakama çevirmek ya da sözcüklerle ve eski ozanların yaptıkları gibi, dizelerle bir olayın tarihini gösterme (tarih düşürme) yolu. Örneğin Şair Eyyubi’nin <i>“Padişah su yoluna yapdı yi ne âli kemer”</i> dizesi, Kanuni döneminde Kâğıthane’deki kemerlerin suyollarının tamamlandığı 972 (1564) tarihini gösterir."
+					}]
+				}
+
+				,
+				{
+					"entry": "aebniye",
+					"id": "1304",
+					"origin": "Ar. (bina'nın çoğulu) esk.",
+					"def": "Binalar",
+					"usages": [
+					{
+						"entry": "aebniye-i âliye",
+						"def": "Önemli binalar"
+					},
+					{
+						"entry": "aebniye-i atika",
+						"def": "Eski binalar"
+					},
+					{
+						"entry": "aebniye-i hassa",
+						"def": "Padişah binaları"
+					},
+					{
+						"entry": "aebniye-i miriye",
+						"def": "Beylik binalar"
+					},
+					{
+						"entry": "aebniye-i seniyye",
+						"def": "Padişah binaları"
+					}]
+				}
+
+				,
+				{
+					"entry": "aebonit,-ti",
+					"id": "1306",
+					"origin": "Far.",
+					"def": "Sıcağa ve soğuğa karşı dayanıklılığı vülkanizasyonla artırılmış kauçuk"
+				}
+
+				,
+				{
+					"entry": "aebru",
+					"id": "1307",
+					"def": "Kâğıt ve porselen bezekçiliğinde, yüzünde türlü renk ve şekilde boya bulunan suyun üzerine kapamak yoluyla kâğıt ya da porselene yapılan hare, budak ve dalga gibi çeşit çeşit süs"
+				}
+
+				,
+				{
+					"entry": "aebrulamak",
+					"id": "1308",
+					"def": "Ebru yaparak boyamak"
+				}
+
+				,
+				{
+					"entry": "aebrulu",
+					"id": "1309",
+					"def": "Üzerinde damar damar renkler bulunan",
+					"synonym": "hareli"
+				}
+
+				,
+				{
+					"entry": "aecelbeşiği",
+					"id": "1310",
+					"origin": "hlk.",
+					"def": "Salıncak iskele",
+					"see_also": "iskele"
+				}
+
+				,
+				{
+					"entry": "aecelbeşiği - sil",
+					"id": "2310",
+					"origin": "hlk.",
+					"def": "Salıncak iskele",
+					"see_also": "iskele"
+				}
+
+				,
+				{
+					"entry": "aedelputz",
+					"id": "1311",
+					"origin": "Al.",
+					"def": "Bir çeşit taraklı dış sıva, ki kabası 1 m<sup>3</sup> kum, 200 kg çimento, 0,300 m<sup>3</sup> kireçten meydana gelen karışıma su katılarak; incesi de 1 m<sup>3</sup> kum, 300 kg çimento, 0,150 m<sup>3</sup> mermer kireci harcı ile yapılır. Sıva harcına, renk vermek için uygun miktarda boya katılabilir. Hazır edelputz sıvalar da vardır"
+				}
+
+				,
+				{
+					"entry": "aedevat,-tı",
+					"id": "1312",
+					"origin": "Ar. (edat'ın çoğulu)",
+					"def": "Aletler, avadanlık"
+				}
+
+				,
+				{
+					"entry": "Aedirnekâri",
+					"id": "1313",
+					"origin": "Osm.",
+					"def": "Edirne’deki eski yapılarda görülen, tahta üzerine yağlıboya ile yapılmış nakışlar; <b>Edirne işi</b> olarak da bilinir. Bu nakışlarda genellikle yeşil ve kahverengi içinde kırmızı çiçek motifleri ve parça parça sarı renkler bulunur. Bu süsleme türüne en çok tavanlarda, kapılarda, dolap kapaklarında ve ahşap duvar kaplamalarında rastlanır"
+				}
+
+				,
+				{
+					"entry": "aefektif açıklık",
+					"id": "1314",
+					"def": "Etken açıklık",
+					"see_also": "açıklık"
+				}
+
+				,
+				{
+					"entry": "aefriz",
+					"id": "1315",
+					"origin": "esk.",
+					"synonym": "°Friz"
+				}
+
+				,
+				{
+					"entry": "aeğe",
+					"id": "1316",
+					"def": "Madenleri törpüleyip istenilen biçime sokmaya yarayan, yüzü çizgi çizgi, sert çe lik alet. Eğeler; yuvarlak, yarım yuvarlak, üçköşe (üçgen), yassı, balıksırtı, sıçankuy ruğu gibi adlar alırlar",
+					"derivatives": [
+						{
+							"entry": "balıksırtı eğe",
+							"def": "Bir yüzü düz, öteki daire yayı şeklinde eğe",
+							"synonym": "yarım yuvarlak eğe"
+						},
+						{
+							"entry": "lama eğe",
+							"def": "Yassı eğe"
+						},
+						{
+							"entry": "aeğri eğe",
+							"def": "Kabartma ve oyma işlerinde kullanılan ucu eğri eğe"
+						},
+						{
+							"entry": "sıçankuyruğu eğe",
+							"see_also": "sıçankuyruğu"
+						},
+						{
+							"entry": "üçgen eğe, üçköşe eğe",
+							"def": "Enine kesiti üçgen olan eğe"
+						},
+						{
+							"entry": "yassı eğe",
+							"def": "Enine kesiti dikdörtgen olan eğe, lama eğe"
+						}
+					]
+				}
+
+				,
+				{
+					"entry": "aeğelemek",
+					"id": "1317",
+					"synonym": "°Eğe ile törpüleyerek aşındırmak"
+				}
+
+				,
+				{
+					"entry": "aeğik",
+					"id": "1318",
+					"def": "Dik ya da yatay olmayan",
+					"synonym": "eğimli, °mail",
+					"usages": [
+						{
+							"entry": "aeğik halatlı köprü",
+							"def": "Gergili köprü",
+							"see_also": "köprü"
+						},
+						{
+							"entry": "aeğik tonoz",
+							"see_also": "tonoz"
+						}
+					]
+				}
+
+				,
+				{
+					"entry": "aeğiklik",
+					"id": "1319",
+					"def": "Eğik durma hali",
+					"synonym": "eğim, °meyil"
+				}
+			]
+		}
+		, {
+			"sectionName": "b",
+			"sectionId": "1",
+			"entries": [
+				{
+					"entry": "beğilme",
+					"id": "1320",
+					"def": "Bir yapı öğesine etkide bulunan kuvvetlerin, bu öğenin kesitinin bir bölü münde basınç gerilmeleri ve geri kalan bölümünde de çekme gerilmeleri oluşturması durumu",
+					"derivatives": [
+					{
+						"entry": "basit eğilme",
+						"def": "Çubuğa etkiyen kuvvetler düz lemi ile çubuk eğilme düzleminin üst üste olduğu eğilme",
+						"synonym": "yarım yuvarlak eğe"
+					},
+					{
+						"entry": "bileşik eğilme",
+						"def": "Bir kirişin iki eksenli eğilme ve normal kuvvet altındaki durumu"
+					},
+					{
+						"entry": "beğik eğilme",
+						"def": "Kuvvetler çizgisinin, kesit asal eksenlerinden biri ile çakışmaması halin de meydana gelen bir deformasyon şekli. Bu durumda çubuğa etkiyen kuvvetler düzlemi ile elastik eğriyi içine alan eğilme düzlemi farklıdır"
+					},
+					{
+						"entry": "kesmeli eğilme",
+						"def": "Kesme kuvvetiyle eğilme momentinin bir arada bulunması durumu"
+					}],
+					"usages": [
+					{
+						"entry": "beğilme açısı",
+						"def": "(α) Eğilme deneyinde eğilme tamamlandıktan sonra örneğin iki kolu arasındaki dış açı"
+					},
+					{
+						"entry": "beğilme dayanımı, eğilme mukavemeti",
+						"def": "(σ<sub>e</sub>) Eğilme etkisi altındaki bir öğenin kırıldığı andaki ‘M<sub>e</sub>’ eğilme momentini ‘W’ mukavemet momentine bölerek elde edilen gerilme. Bu gerilmenin birimi N/mm<sup>2</sup>’dir"
+					},
+					{
+						"entry": "beğilme momenti",
+						"def": "Bir kirişin herhangi bir kesitindeki toplam eğilme etkisi. Kısaca ‘M<sub>e</sub>’ olarak tanımlanan eğilme momenti, kesitin sağındaki (ya da solundaki) bütün momentlerin cebirsel toplamına eşittir. Bu moment, “kuvvet x kuvvet kolu” olarak belirtilebilir. İki mesnede serbestçe oturul muş bir kirişe, açıklığın tam ortasında bir P kuvveti uygulanması halinde kirişin ortasında meydana gelen eğilme momenti<br/>M<sub>e</sub> = (P x L<sub>a</sub>)/4 formülü ile hesaplanır. Formülde,<br/> P = Uygulanan düşey kuvvet (N).<br/> L<sub>a</sub> = Mesnet açıklığıdır (m)"
+					},
+					{
+						"entry": "beğilme momenti diyagramı",
+						"def": "Bir yüklemede kiriş boyunca herhangi bir noktadaki eğilme momentinin miktarını gösteren diyagram"
+					}],
+					"images": [
+					{
+						"url": "img/egilme_acisi.png",
+						"caption": "eğilme açısı",
+						"dataX": "data:image/png;base64,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"
+					}]
+				}
+
+				,
+				{
+					"entry": "beğim",
+					"id": "1321",
+					"definitions": [
+					{
+						"def": "Bir doğrunun ya da bir yüzeyin yatay olmayıp, az veya çok, düşeye doğru bir durum almış bulunması, eğiklik",
+						"synonym": "akıntı, °meyil"
+					},
+					{
+						"def": "Eğik doğrunun ya da yüzeyin yatayla meydana getirdiği açının tanjantı. Pratikte bir yüzeyin eğimi, bu yüzeyin yatayla yaptığı açı (derece cinsinden) veya bu açının yüzde cinsinden tanjantı ile belirtilir. Örneğin: “Bakır kaplı çatının eğimi en az 7° olmalıdır” ya da “Bakır kaplı çatının eğimi en az %12,3 olmalıdır.” 45°’lik bir çatının eğilimi %100’dür"
+					}]
+				}
+
+				,
+				{
+					"entry": "beğimölçer",
+					"id": "1322",
+					"def": "Bir yüzeyin yatayla yaptığı açıyı ya da eğimini ölçmekte kullanılan bir çeşit düzeç",
+					"synonym": "°klinometre"
+				}
+
+				,
+				{
+					"entry": "beğmeç",
+					"id": "1323",
+					"def": "Yay",
+					"synonym": "°kavis"
+				}
+
+				,
+				{
+					"entry": "beğmel",
+					"id": "1324",
+					"def": "Eğmeç şeklinde olan"
+				}
+
+				,
+				{
+					"entry": "beğreti lamba",
+					"id": "1325",
+					"see_also": "lamba (II)"
+				}
+
+				,
+				{
+					"entry": "beğretiye almak",
+					"id": "1326",
+					"def": "Bir yapıda, altta çalışmak üzere üst bölümü askıya almak"
+				}
+
+				,
+				{
+					"entry": "beğri",
+					"id": "1327",
+					"definitions": [
+					{
+						"type": "a.",
+						"def": "Doğru veya kırık çizgi biçimin de olmayıp bir yay gibi her noktasında aynı ya da karşıt tarafa doğru yön değiştiren (çizgi)",
+						"see_also": "tesviye eğrisi, zincir eğrisi"
+					},
+					{
+						"type": "sıf.",
+						"def": "Yay gibi kavislenmiş",
+						"synonym": "eğmeçli, kavisli"
+					},
+					{
+						"type": "a.",
+						"def": "Bir olayın yeğinliğindeki artış ve azalışları temsil eden çizgi:",
+						"synonym": "sıcaklık eğrisi"
+					}]
+				}
+			]
+		}
+
+		, {
+			"sectionName": "c",
+			"sectionId": "2",
+			"entries": [
+				{
+					"entry": "ceğrilik",
+					"id": "1328",
+					"origin": "mat.",
+					"def": "Bir yayın bir noktasındaki teğetin, gittikçe bu noktaya yaklaşmak üzere çıkan başka bir teğetle meydana getirdiği açının bu iki teğet noktası arasındaki yay uzunluğuna oranı"
+				}
+
+				,
+				{
+					"entry": "cehram",
+					"id": "1329",
+					"origin": "Ar.",
+					"synonym": "°Piramit",
+					"derivatives": [
+					{
+						"entry": "kademeli ehram",
+						"def": "Basamaklı piramit"
+					}]
+				}
+
+				,
+				{
+					"entry": "cehramî",
+					"id": "1330",
+					"origin": "Ar. esk.",
+					"def": "Piramit biçiminde ya da piramide değgin",
+					"synonym": "°piramidal"
+				}
+
+				,
+				{
+					"entry": "cekinus",
+					"id": "1331",
+					"origin": "Yun. (ekhinos kirpi)",
+					"def": "Dorik sütun başlığında abaksun altında yer alan, yastık biçiminde yuvarlak silme"
+				}
+
+				,
+				{
+					"entry": "cekip",
+					"id": "1332",
+					"origin": "Fr. (équipe)",
+					"def": "Takım, işçi takımı"
+				}
+
+				,
+				{
+					"entry": "cekipman",
+					"id": "1333",
+					"origin": "Fr. (équipement)",
+					"def": "Donatım"
+				}
+
+				,
+				{
+					"entry": "Cekistik",
+					"id": "1334",
+					"origin": "Yun. (oikos ev, konut) (Yunan mimarı C.A Doxiadis’in ortaya attığı kavram)",
+					"def": "Konut sorunlarının çözümünü araştıran insancıl yerleşme bilimi. Ekonomik ve sosyal, siya sal ve idari bilimler ile teknoloji ve estetiğin tutarlı bir bütünlük içinde eşgüdümünü sağlayacak çağdaş koşullara uygun yeni tarzda bir yerleşim düzeni amaçlar. Bu çalışmada mimar; yatırımcı, şehirci, plancı, iktisatçı, coğrafyacı, sosyolog gibi uzmanlarla aynı ekibin bir üyesi olarak işbirliği yapacak şekilde kendisini söz konusu alanlara ilişkin bilgilerle donatmak ve geliştirmek zorundadır. Mimar bu ekibin koordinatörü ya da alınan kararların uygulayıcısı konumundadır. Ekistik, konut sorunlarının nedeni olan gelişmeyi konutun kendisine bağlar. Bir çalışma bütününü kapsayan ekistik, bu bütünlük içinde yapılması gereken her çalışmaya yön verir"
+				}
+
+				,
+				{
+					"entry": "ceklektik",
+					"id": "1335",
+					"origin": "Fr. (éclectique) < Yun. (eklegein seçmek) (Özgün olarak)",
+					"def": "Çeşitli felsefelerden dilediklerini seçen filozofların okulunu anlatmakta kullanılan terim; kökü seçmeciliğe, eklektisizme dayanan (sanat ya da yapıt)",
+					"synonym": "seçmeci, derme"
+				}
+			]
+		}
+		, { "sectionName": "ç", "sectionId": "3", "entries": []}
+		, { "sectionName": "d", "sectionId": "4", "entries": []}
+		, { "sectionName": "e", "sectionId": "5", "entries": []}
+		, { "sectionName": "f", "sectionId": "6", "entries": []}
+		, { "sectionName": "g", "sectionId": "7", "entries": []}
+		, { "sectionName": "h", "sectionId": "8", "entries": []}
+		, { "sectionName": "ı", "sectionId": "9", "entries": []}
+		, { "sectionName": "i", "sectionId": "10", "entries": []}
+		, { "sectionName": "j", "sectionId": "11", "entries": []}
+		, { "sectionName": "k", "sectionId": "12", "entries": []}
+		, { "sectionName": "l", "sectionId": "13", "entries": []}
+		, { "sectionName": "m", "sectionId": "14", "entries": []}
+		, { "sectionName": "n", "sectionId": "15", "entries": []}
+		, { "sectionName": "o", "sectionId": "16", "entries": []}
+		, { "sectionName": "ö", "sectionId": "17", "entries": []}
+		, { "sectionName": "p", "sectionId": "18", "entries": []}
+		, { "sectionName": "r", "sectionId": "19", "entries": []}
+		, { "sectionName": "s", "sectionId": "20", "entries": []}
+		, { "sectionName": "ş", "sectionId": "21", "entries": []}
+		, { "sectionName": "t", "sectionId": "22", "entries": []}
+		, { "sectionName": "u", "sectionId": "23", "entries": []}
+		, { "sectionName": "ü", "sectionId": "24", "entries": []}
+		, { "sectionName": "v", "sectionId": "25", "entries": []}
+		, { "sectionName": "y", "sectionId": "26", "entries": []}
+		, { "sectionName": "z", "sectionId": "27", "entries": []}
+				
+	]
+}

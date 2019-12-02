@@ -1,0 +1,443 @@
+<!DOCTYPE HTML>
+<html ng-app="app" ng-controller="AppController as appCtrl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; font-src data: file:;"> -->
+	<meta http-equiv="Content-Security-Policy" content="default-src * data: gap: file: https://ssl.gstatic.com http://*.mimarliksozlugu.net; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+
+	<script src="components/loader.js"></script>
+
+	<script src="lib/angular/angular.min.js"></script>
+
+	<script type="text/javascript" src="lib/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="lib/onsenui/js/onsenui.min.js"></script>
+	<script type="text/javascript" src="lib/onsenui/js/angular-onsenui.min.js"></script>
+	<script type="text/javascript" src="lib/sqlite/SQLitePlugin.js"></script>
+	<script type="text/javascript" src="lib/swiper/swiper.min.js"></script>
+	<script type="text/javascript" src="lib/clusterize/clusterize.min.js"></script>
+
+	<script type="text/javascript" src="js/d3.min.js"></script>
+	<script type="text/javascript" src="js/nv.d3.min.js"></script>
+
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/moment.min.js"></script>
+	<script type="text/javascript" src="js/elasticlunr.js"></script>
+	<script type="text/javascript" src="js/lunr.stemmer.support.js"></script>
+	<script type="text/javascript" src="js/lunr.tr.js"></script>
+	<script type="text/javascript" src="js/controller/AppController.js"></script>
+	<script type="text/javascript" src="js/controller/PrefsController.js"></script>
+	<script type="text/javascript" src="js/controller/DictionaryController.js"></script>
+	<script type="text/javascript" src="js/controller/WordDetailController.js"></script>
+	<script type="text/javascript" src="js/controller/AboutController.js"></script>
+	<script type="text/javascript" src="js/controller/MenuController.js"></script>
+	<script type="text/javascript" src="js/controller/BookmarksController.js"></script>
+	<script type="text/javascript" src="js/service/PrefsService.js"></script>
+	<script type="text/javascript" src="js/service/MainDictionaryService.js"></script>
+	<script type="text/javascript" src="js/service/DictionaryDataService.js"></script>
+	<script type="text/javascript" src="js/service/LocalStorageDictService.js"></script>
+	<script type="text/javascript" src="js/service/RemoteUpdateService.js"></script>
+	<script type="text/javascript" src="js/service/WordHtmlService.js"></script>
+	
+	<script type="text/javascript" src="lib/bootstrap.js"></script>
+	
+	<script type="text/javascript" src="mathjax/MathJax.js?config=TeX-AMS_HTML"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="components/loader.css">
+	<link rel="stylesheet" type="text/css" href="lib/swiper/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/onsenui/css/onsenui.css">
+	<link rel="stylesheet" type="text/css" href="lib/onsenui/css/onsen-css-components.css">
+	
+	<link rel="stylesheet" type="text/css" href="lib/clusterize/clusterize.css">
+
+	<link rel="stylesheet" type="text/css" href="css/app_mobile.css">
+	<link rel="stylesheet" type="text/css" href="css/app_fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/app_dictionary.css">
+	<link rel="stylesheet" type="text/css" href="css/app_table.css">
+	<link rel="stylesheet" type="text/css" href="css/nv.d3.min.css">
+	
+	<script>
+
+		ons.ready(() => {
+			console.log("-- Onsen UI is ready!");
+
+			document.addEventListener('deviceready', function() {
+				console.log("-- Also: deviceready");
+				//testDB();
+			});
+		});
+
+	</script>
+</head>
+
+<body>
+
+	<ons-page ng-controller="MenuController as splitterCtrl">
+		<ons-splitter >
+			<ons-splitter-side class="alphabet-box" id="letterSplitter" var="letterSplitter" side="right" collapse>
+				<ons-page class="container alphabet-page" ng-controller="DictionaryController as mainDictionaryCtrl">
+					<div class="alphabet-close-button">
+						<ons-list-item modifier="nodivider" class="letter-item scard">
+							<ons-list-item modifier="nodivider" class="letter-item scard">
+								<div class="right">
+									<ons-button ng-click="mainDictionaryCtrl.toggleLetters()" class="btn-alphabet-close">
+										<ons-icon icon="fa-angle-double-right"></ons-icon>
+										<strong>Kapat</strong>
+									</ons-button>
+								</div>
+							</ons-list-item>
+						</ons-list-item>
+					</div>
+					<div class="alphabet-list">
+						<div class="letter-item scard" modifier="nodivider" ng-repeat="char in mainDictionaryCtrl.alphabetList()" >
+							<ons-button class="btn-alphabet-letter btn-alphabet-col" data-section-id="{{ char.id }}" ng-click="btnAlphabetClick($event)" style="">{{ char.c + char.c.toLocaleLowerCase('tr') }}</ons-button>
+						</div>
+					</div>
+				</ons-page>
+			</ons-splitter-side>
+			<ons-splitter-content id="content">
+				<ons-navigator var="navi" page="main.html" ons-postpush="appCtrl.notifyPage();">
+			</ons-splitter-content>
+		</ons-splitter>
+	</ons-page>
+
+	<ons-template id="main.html">
+		<ons-page data-page-name="mainPage" style="display: flex" ng-controller="DictionaryController as mainDictionaryCtrl">
+			<ons-toolbar>
+				<div class="left">
+					<ons-toolbar-button ng-click="mainDictionaryCtrl.showPage('menu.html')">
+						<ons-icon icon="fa-bars"></ons-icon>
+					</ons-toolbar-button>
+					<ons-toolbar-button ng-click="mainDictionaryCtrl.showPage('bookmarks.html')">
+						<ons-icon class="fa-fw" icon="fa-bookmark"></ons-icon>
+					</ons-toolbar-button>
+
+				</div>
+				<div class="center">
+					<span class="label-selected-letter-label">{{ appTitle }}</span>
+				</div>
+				
+				<div class="right">
+					<ons-toolbar-button ng-click="mainDictionaryCtrl.toggleLetters()">
+						<ons-icon icon="fa-angle-double-left"></ons-icon>
+						<strong>abc</strong>
+					</ons-toolbar-button>
+				</div>
+			</ons-toolbar>
+
+			<div class="opt-search-page" >
+				<div style="display:none" class="scrolling-wrapper-flexbox">
+				</div>
+				<div class="filter-input-container">
+					<!-- <ons-search-input id="txtSearch" name="queryAll" ng-model="search.queryAll" type="search" placeholder="Aradığınız kelime..."></ons-search-input> -->
+					<div class="magnifier-search-box">
+						<ons-icon class="magnifier-search-icon" icon="fa-search"></ons-icon>
+					</div>
+					<input maxlength="20" class="search-box-input form-control" id="txtSearchAll" name="queryAll" placeholder="Aradığınız kelime...">
+					</input>
+					<div class="clear-search-box" ng-click="mainDictionaryCtrl.clearSearchBox()">
+						<ons-icon class="clear-search-icon" icon="fa-times-circle"></ons-icon>
+					</div>
+				</div>
+				
+
+				<div id="scrollArea" class="clusterize-scroll" style="flex: 1; overflow-y: auto;">
+					<ons-list id="contentArea"  class="clusterize-content" >
+						<ons-list-item class="word_list_item" class="clusterize-no-data">Yükleniyor...</ons-list-item>
+					</ons-list>
+				</div>
+
+				<div class="ad-box">
+					<a class="ad-box-link"><img class="ad-box-image fade" src="#" /></a>
+				</div>
+				
+			</div>
+			<ons-modal id="mainProgressModal" direction="up">
+				<div class="progress_bg">
+					<ons-progress-circular class="progress_anim" indeterminate></ons-progress-circular>
+					<p>Lütfen Bekleyin...</p>
+				</div>
+			</ons-modal>
+		</ons-page>
+
+	</ons-template>
+	
+	<ons-template id="search.html">
+		<ons-page data-page-name="searchPage" style="display:flex; flex-direction: column" ng-controller="DictionaryController as dictionaryCtrl">
+			<ons-toolbar>
+				<div class="left"><ons-back-button>Geri</ons-back-button></div>
+				<div class="right">
+					<ons-toolbar-button class="toolbar-right-button">
+						<ons-icon ng-click="dictionaryCtrl.showPage('menu.html')" icon="fa-bars"></ons-icon>
+					</ons-toolbar-button>
+				</div>
+				<div class="center label-selected-letter-label">
+					<ons-button class="btn-selected-letter" ng-click="dictionaryCtrl.toggleLetters()">
+						<span class="label-selected-letter-label"></span> 
+						<span class="label-selected-letter">{{ dictionaryCtrl.getSectionLabel() }}</span>
+					</ons-button>
+				</div>
+			</ons-toolbar>
+			<div class="opt-search-page" >
+				<div style="">
+					<ons-col>
+						<ons-row class="ons-row-search-opt ons-row-search-opt-main">
+						</ons-row>
+					</ons-col>
+				</div>
+				<div style="">
+					<div ng-if="prefs.ui.viewMode == null || prefs.ui.viewMode == 'search'" class="search-form" style="">
+						<!-- search text input-->
+						<ons-row class="options_row">
+							<div class="w-100 filter-input-container">
+								<!-- <ons-search-input id="txtSearch" name="querySection" ng-model="search.querySection" type="search" placeholder="Aradığınız kelime..."></ons-search-input> -->
+								<div class="magnifier-search-box">
+									<ons-icon class="magnifier-search-icon" icon="fa-search"></ons-icon>
+								</div>
+								<input maxlength="20" class="search-box-input  form-control" id="txtSearchSection" name="querySection" placeholder="Aradığınız kelime...">
+								</input>
+								<div class="clear-search-box" ng-click="dictionaryCtrl.clearSectionSearchBox()">
+									<ons-icon class="clear-search-icon" icon="fa-times-circle"></ons-icon>
+								</div>
+							</div>
+						</ons-row>
+						<ons-row class="options_row">
+							<ons-col>
+								<ons-list-item modifier="opts" class="d-flex flex-row options_item" ng-disabled="prefs.search.isPartialMatch">
+									<div class="float-right">
+										<ons-switch id="chkDetailedSearch" ng-change="dictionaryCtrl.onSearchOptionChange()" ng-disabled="prefs.search.isPartialMatch" ng-model="prefs.search.isSearchDetails"></ons-switch>
+									</div>
+									<div class="flex-fill float-sm-right float-left">
+										<label style="flex: 1;" class="opt-label" for="chkDetailedSearch">Ayrıntılarda ara</label>
+									</div>
+								</ons-list-item>
+							</ons-col>
+						</ons-row>
+						<!-- search options -->
+						<!-- <ons-row class="ons-row-search-opt"> -->
+						<!-- <ons-row>
+							
+							<ons-col>
+								<ons-list-item ng-hide="prefs.search.isShowAll" modifier="opts" class="options_item">
+						
+								<ons-list-item modifier="opts" class="options_item">
+									<div class="center row-search-sub-opt">Yaklaşık sonuç</div>
+									<div class="right">
+										<ons-switch ng-change="dictionaryCtrl.onSearchOptionChange()" ng-disabled="" ng-model="prefs.search.isPartialMatch"></ons-switch>
+									</div>
+								</ons-list-item>
+							</ons-col>
+						</ons-row> -->
+					</div>
+				</div>
+				<div style="flex: 1; overflow-y: auto">
+
+					<div id="sectionScrollArea" class="clusterize-scroll" style="flex: 1; overflow-y: auto">
+						<ons-list id="sectionContentArea" class="clusterize-content" >
+							<ons-list-item class="word_list_item" class="clusterize-no-data">Yükleniyor...</ons-list-item>
+						</ons-list>
+					</div>
+				</div>
+			</div>
+		</ons-page>
+	</ons-template>
+	
+	<ons-template id="select-letter.html">
+	</ons-template>
+
+	<ons-template id="menu.html">
+		<ons-page data-page-name="menu" ng-controller="MenuController as menuCtrl" >
+			<ons-toolbar>
+				<div class="left"><ons-back-button>Kapat</ons-back-button></div>
+				<div class="label-selected-letter-label center">Menü</div>
+			</ons-toolbar>
+			<ons-list>
+				<!-- <ons-list-item ng-click="menuCtrl.load('main.html')" tappable> -->
+				<ons-list-item ng-click="menuCtrl.gotoHomePage()" tappable>
+					<ons-icon class="menu_icon fa-fw" icon="fa-home"></ons-icon>
+					<div class="menu-label">Ana Sayfa</div>
+				</ons-list-item>
+				<ons-list-item ng-click="menuCtrl.load('bookmarks.html')" tappable>
+					<ons-icon class="menu_icon fa-fw" icon="fa-bookmark"></ons-icon>
+					<div class="menu-label">Favoriler</div>
+				</ons-list-item>
+				<ons-list-item style="display: none;" ng-click="menuCtrl.load('settings.html')" tappable>
+					<ons-icon class="menu_icon fa-fw" icon="fa-sliders"></ons-icon>
+					<div class="menu-label">Ayarlar</div>
+				</ons-list-item>
+				<ons-list-item ng-click="menuCtrl.load('about.html')" tappable>
+					<ons-icon class="menu_icon fa-fw" icon="md-info"></ons-icon>
+					<div class="menu-label">Hakkında</div>
+				</ons-list-item>
+				<!-- <ons-list-item ng-click="menuCtrl.setPlatform('android')" tappable>
+					<ons-icon class="menu_icon fa-fw" icon="md-android"></ons-icon>
+					Android
+				</ons-list-item>
+				<ons-list-item ng-click="menuCtrl.setPlatform('ios')" tappable>
+					<ons-icon class="menu_icon fa-fw" icon="md-apple"></ons-icon>
+					iOS
+				</ons-list-item> -->
+			</ons-list>
+		</ons-page>
+	</ons-template>
+
+	<ons-template id="word.html">
+		<ons-page data-page-name="wordPage" var="wordPage" class="word_html" ng-controller="WordDetailController as wordCtrl">
+			<ons-toolbar>
+				<div class="left"><ons-back-button>Geri</ons-back-button></div>
+				<div class="selected_word_entry center">{{ wordCtrl.activeEntry }}</div>
+				<div class="right">
+					<ons-toolbar-button var="bmToggleButton" id="bmToggleButton" class="toolbar-right-button">
+						<ons-icon class="word-bookmark" ng-click="wordCtrl.addBookmark()" icon="fa-bookmark-o"></ons-icon>
+					</ons-toolbar-button>
+				</div>
+			</ons-toolbar>
+
+			<!-- <ons-carousel on style="opacity: 0.01" direction="horizontal" fullscreen swipeable auto-scroll overscrollable id="carousel">
+				<ons-carousel-item ng-repeat="wordEntry in wordCtrl.selectedSectionEntries()" class="container-fluid h-100 word_carousel_item">
+					<div class="scrolling-wrapper-flexbox d-flex flex-column h-100">
+						<div class="navbar fixed-top sticky-top sel-word-nav">
+							<div class="sel_word_div" style="">
+								<label class="selected_word" id="wordTitle-{{ wordEntry.id }}"></label>
+							</div>
+						</div>
+						<div id="outer" style="flex: 1;" class="d-flex flex-column flex-grow">
+							<div id="two" class="h-100 flex-grow">
+								<div class="d-flex flex-column flex-grow" style="">
+									<div class="sel_def_div">
+										<label id="wordDefinition-{{ wordEntry.id }}" class="selected_def"></label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</ons-carousel-item>
+			</ons-carousel> -->
+			
+			<!-- <ons-carousel style="opacity: 0.01" direction="horizontal" fullscreen swipeable auto-scroll overscrollable id="carousel">
+				<ons-carousel-item class="container-fluid h-100 word_carousel_item"><div class="d-flex flex-column h-100"><nav class="navbar fixed-top sticky-top sel-word-nav"><div class="sel_word_div" style=""><label class="selected_word" id="wordTitle-{{ wordEntry.id }}"></label></div></nav></div></ons-carousel-item>
+			</ons-carousel> -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper"></div>
+			</div>
+			
+			<ons-fab position="bottom right">
+				<ons-icon class="word-bookmark" ng-click="wordCtrl.addBookmark()" icon="fa-bookmark-o"></ons-icon>
+			</ons-fab>
+		</ons-page>
+	</ons-template>
+
+	<ons-popover direction="left" id="popover" cancelable>
+		<div style="padding: 10px; text-align: center;">
+			<p>
+				Sözcüğü, bu simgeyi kullanarak favorilere ekleyebilirsiniz.
+			</p>
+		</div>
+	</ons-popover>
+
+	<ons-template id="bookmarks.html">
+		<ons-page data-page-name="bookmarks" ng-controller="BookmarksController as bkmarkCtrl" >
+			<ons-toolbar>
+				<div class="left"><ons-back-button>Geri</ons-back-button></div>
+				<div class="label-selected-letter-label center">
+					Favoriler
+				</div>
+			</ons-toolbar>
+			<ons-row style="display: {{ bkmarkCtrl.bookmarks().length > 0 ? 'none' : 'block' }};" class="center label-no-entries">
+				<ons-col align="center">Favori sözcük listeniz şu anda boş</ons-col>
+			</ons-row>
+			<ons-list>
+				<ons-list-item class="bookmark-list-item" ng-click="showWordDetail(wordEntry)" ng-repeat="wordEntry in bkmarkCtrl.getBookmarkEntries()" >
+					<div class="word_list_item bookmark-list-word">{{ getEntryLabel(wordEntry) }}</div>
+					<div ng-click="bkmarkCtrl.removeBookmark(wordEntry)" class="right" style="padding-left: 15px;"><ons-icon class="" icon="ion-close" size="14px" fixed-width="true" style="opacity:0.5; margin-left:0px"></ons-icon></div>
+				</ons-list-item>
+			</ons-list>
+		</ons-page>
+	</ons-template>
+
+	<ons-template id="settings.html">
+		<ons-page data-page-name="prefsPage" var="prefsPage" ng-controller="PrefsController as prefsCtrl" >
+			<ons-toolbar>
+				<div class="left"><ons-back-button>Geri</ons-back-button></div>
+				<div class="center">Ayarlar</div>
+			</ons-toolbar>
+
+			<ons-list-header>Sözlük Modu</ons-list-header>
+				<ons-list-item tappable>
+					<label class="left">
+						<ons-radio name="color" input-id="radio-1" ng-model="prefs.ui.viewMode" value="search"></ons-radio>
+					</label>
+					<label for="radio-1" class="center">
+						Arama
+					</label>
+				</ons-list-item>
+				<ons-list-item tappable>
+					<label class="left">
+						<ons-radio name="color" input-id="radio-2" ng-model="prefs.ui.viewMode" value="browse"></ons-radio>
+					</label>
+					<label for="radio-2" class="center">
+						Gezinti
+					</label>
+				</ons-list-item>
+				<ons-list-item ng-click="prefsCtrl.reset()" tappable>
+					<ons-icon class="menu_icon" icon="md-refresh" ></ons-icon>
+					<label>Varsayılan Ayarlara Dön</label>
+				</ons-list-item>
+			</ons-list>
+
+		</ons-page>
+	</ons-template>
+
+	<ons-template id="about.html">
+		<ons-page class="page-about" data-page-name="aboutPage" ng-controller="AboutController as aboutCtrl">
+			<ons-toolbar>
+				<div class="left"><ons-back-button>Geri</ons-back-button></div>
+				<div class="center">
+					<span class="label-selected-letter-label">Hakkında</span>
+				</div>
+			</ons-toolbar>
+			<div class="center about_text" ng-controller="DictionaryController as dictCtrl">
+				<p class="about_text label-selected-letter-label">{{ aboutTitle }}</p>
+				<p class="about_text">Sürüm: {{ appVersion }}</p>
+				<p class="about_text">{{ aboutText }}</p>
+
+				<div class="about-copyright-box">
+					<p class="about_text about-text-copyright">{{ copyright1 }}</p>
+					<p class="about_text about-text-copyright">{{ copyright2 }}</p>
+					<p class="about_text about-text-copyright">{{ copyright3 }}</p>
+				</div>
+
+				<p><ons-button class="btn-settings" ng-click="aboutCtrl.checkDictionaryUpdate()">Sözlüğü Güncelle</ons-button></p>
+				<p><ons-button class="btn-settings" ng-click="aboutCtrl.showResetDialog()">Bilgileri Sıfırla</ons-button></p>
+				<p><ons-button class="d-none btn-settings" ng-click="aboutCtrl.checkVersionUpdate()">Sürüm Güncelle</ons-button></p>
+			</div>
+
+			<ons-alert-dialog var="approveResetDialog" cancelable modifier="rowfooter">
+				<div class="alert-dialog-title">Dikkat!</div>
+				<div class="alert-dialog-content">
+					Favorileriniz ve sözlük güncelleme bilgileri silinecek. Onaylıyor musunuz?
+				</div>
+				<div class="alert-dialog-footer">
+					<ons-alert-dialog-button ng-click="approveResetDialog.hide()">Vazgeç</ons-alert-dialog-button>
+					<ons-alert-dialog-button ng-click="aboutCtrl.approveClearData(dictCtrl)">Onayla</ons-alert-dialog-button>
+				</div>
+			</ons-alert-dialog>
+			
+			<ons-modal id="aboutProgressModal" direction="up">
+				<div class="progress_bg">
+					<ons-progress-circular class="progress_anim" indeterminate></ons-progress-circular>
+					<p>Güncelleniyor...</p>
+				</div>
+			</ons-modal>
+		</ons-page>
+	</ons-template>
+
+	<ons-toast id="myToast" animation="ascend">
+		FABs up!
+		<button onclick="myToast.hide()">ok</button>
+	</ons-toast>
+
+</body>
+</html>

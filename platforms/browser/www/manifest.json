@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Onsen World Population",
+  "short_name": "Onsen World Population",
+  "version": "io.monaca.worldPopulation",
+  "description": "Made with Monaca (http://monaca.mobi)",
+  "icons": [],
+  "orientation": "any",
+  "start_url": "index.html"
+}

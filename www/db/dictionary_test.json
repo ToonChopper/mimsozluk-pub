@@ -1,0 +1,44 @@
+{
+  "name": "dictionary",
+  "version": "0.9.1",
+  "private": false,
+  "entries": [
+    {
+      "entry": null,
+      "id": 0,
+      "entries": [
+        {
+          "extras": "Orta Amerika yerlileri Azteklerin, 1100-1520 yılları arasında yani İspanyol fethine değin bugünkü Meksika topraklarında geliştirdikleri mimarlık. Aztekler o yörede daha önce yaşamış olan Tolteklerin mimari biçimlerinden esinlenmiş ve anıtsal ölçekli sade biçimler, ızgara planlar, çoğunlukla insan, çiçek ve tanrı kabartmalarıyla süslenmiş parlak renkli dış cephelerden oluşan bir mimarlık yaratmışlardır. En önemli anıtları olan piramitlerin tepesinde, yamaçlardaki paralel merdivenli yollarla ulaşılan iki tapınak söz konusudur. İspanyol istilası sonrasında Aztek mimarlığından geriye çok az şey kalabilmiş, Azteklerin başkenti de modern Mexico City’nin altında gömülü kalmıştır. Aztek ve Maya mimarlıkları 1920-30’larda Avrupa’daki Art Deco akımına esin kaynağı olmuştur. Bkz. Maya Mimarlığı."
+        }
+      ],
+      "usages": [],
+      "derivatives": [],
+      "definitions": [],
+      "examples": [],
+      "def": null,
+      "origin": ""
+    },
+    {
+      "entry": null,
+      "id": 0,
+      "entries": [
+        {
+          "extras": " <em>Yun.</em> "
+        }
+      ],
+      "usages": [],
+      "derivatives": [],
+      "definitions": [
+        {
+          "def": "İçinde taşıl (fosil) bulunmayan (toprak) "
+        },
+        {
+          "def": "En eski jeolojik sistem. "
+        }
+      ],
+      "examples": [],
+      "def": null,
+      "origin": ""
+    }
+  ]
+}
